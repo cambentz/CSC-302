@@ -1,0 +1,30 @@
+# History files
+.Rhistory
+.Rapp.history
+
+# Session Data files
+.RData
+.Ruserdata
+
+# RStudio files
+.Rproj.user/
+
+# Output files
+*.utf8.md
+*.knit.md
+
+# R Packages
+*.Rcheck/
+
+# Renv
+/renv/library/
+/renv/sandbox/
+/renv/staging/
+
+# Packrat
+packrat/lib*
+packrat/src/
+packrat/.cache
+
+# Temporary files
+*.rds
