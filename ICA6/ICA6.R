@@ -18,14 +18,15 @@ head(df2)
 
 # 4. Assign those rows which have Survived passengers under the age of 40 to another data frame called younger.
 
-younger <- df2[df2['Age'] < 30 & df2['Survived']==1, ]
+younger <- df2[df2['Age'] < 30 & df2['Survived'] == 1, ]
 head(younger)
 
 # 5. Assign those rows which have Survived passengers at the age of 30 and above to another data frame called older.
 
-older <- df2[df2['Age'] > 30 & df2['Survived'] == 1, ]
+older <- df2[df2['Age'] >= 30 & df2['Survived'] == 1, ]
 head(older)
 
-library(tidyr)
-library(dplyr)
-
+#library(tidyr)
+#library(dplyr)
+#df %>% drop_na() %>% count(Age >= 30 & Survived == 1)
+#df %>% drop_na() %>% count(Age < 30 & Survived == 1)
